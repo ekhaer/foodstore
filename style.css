@@ -127,25 +127,26 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f5f2ed;
     padding: 80px 200px ;
     border-radius: 10px;
-    border-style: solid;
-    border-color: black;
+    /* border-style: ;
+    border-color: black; */
     margin: 600px;
     position: absolute;
     top: 350px;
     left: 350px;
     width: 200px;
     height: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: Arial, Helvetica, sans-serif
   }
   .input-box {
     width: 350px;
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
-    border-style: solid;
-    border-color: black;
+    /* border-style: solid;
+    border-color: black; */
   }
   .form-input-text {
     width:53%;
@@ -177,6 +178,38 @@ form {
     button:focus {
     border: none;
     }
+
+    .review-box {
+        width: 60%;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      
+      .review-list {
+        min-width: 40%;
+        list-style: none;
+        transition: all 0.5s ease;
+      }
+      
+      .review {
+        margin: 0.5rem;
+        background: white;
+        color: black;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem;
+        border-radius: 0.4rem;
+        transition: all 0.5s ease;
+      }
+      .review-item {
+        padding: 0rem 0.5rem;
+      }
+      .review li {
+        flex: 1;
+      }
 
 
  
