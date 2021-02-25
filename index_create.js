@@ -5,6 +5,16 @@ const addButton = document.getElementById('form-button');
 addButton.addEventListener('click', addReview);
 // const review = document.getElementById("review").value;
 
+const delButton = document.getElementById('reviewsList');
+delButton.addEventListener('click', hapus);
+
+function hapus(event) {
+  const item = event.target;
+  if (item.classList[0] === 'delete') {
+    const comment = item.parentElement;
+    comment.remove()
+  }
+}
 
 function addReview(event){
     // clearArr()
@@ -15,15 +25,15 @@ function addReview(event){
     }
     reviews.push(obj)
     console.log(reviews);
-    const tempList = document.getElementById("reviewsList");
-    while(tempList.hasChildNodes()){
-        tempList.removeChild(tempList.firstChild)
-    }
+    clearArr();
     render(reviews);
 }
 
 function clearArr(){
-    reviews = [];
+    const tempList = document.getElementById("reviewsList");
+    while(tempList.hasChildNodes()){
+        tempList.removeChild(tempList.firstChild)
+    }
 }
 
 function render(arr){
@@ -33,7 +43,7 @@ function render(arr){
         let data = arr[i];
         let listElement = document.createElement('li');
         listElement.classList.add('li-review');
-        listElement.innerText = data.nama + ' ' + data.review;
+        listElement.innerText = `${data.nama}: ${data.review}`;
         // console.log(listElement);
         //adding edit button
         let editIcon = document.createElement('button');
@@ -44,6 +54,13 @@ function render(arr){
 
         editIcon.className = 'edit';
         deleteIcon.className = 'delete';
+
+        deleteIcon.setAttribute('type', 'submit')
+        editIcon.setAttribute('type', 'submit')
+
+        //adding id to edit and delete
+        deleteIcon.setAttribute('id', i+'-delete');
+        editIcon.setAttribute('id', i+'-edit');
 
         listElement.appendChild(editIcon);
         listElement.appendChild(deleteIcon);
