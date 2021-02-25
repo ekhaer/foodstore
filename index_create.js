@@ -1,60 +1,36 @@
-let reviews = [
-    {
-        name : 'Salad Buah',
-        review : 'ada'
-    }
-]
+let reviews = []
 
-const content = document.getElementById("content");
-// let formInputText = document.querySelector(".form-input-name");
-
-// const addButton = document.querySelector(".form-button");
-// addButton.addEventListener('click', addReview);
+// const konten = document.getElementById('listReview');
+const addButton = document.getElementById('form-button');
+addButton.addEventListener('click', addReview);
+// const review = document.getElementById("review").value;
 
 
-var btnSave = document.getElementById("save_task");
-function init(){
-    if(!!(window.localStorage.getItem('reviews'))){
-        reviews = JSON.parse(window.localStorage.getItem('reviews'));
-    } else {
-      reviews = [];
-    }
-    btnSave.addEventListener('click', addReview);
-    showList();
-}
-
-function addReview(){
-    // 'click'.preventDefault();
-    console.log('click');
-    let name = document.getElementById('name').value;
-    let review = document.getElementById('text').value;
-    const formInputText = document.querySelector(".form-input-name");
+function addReview(event){
+    clearArr()
+    event.preventDefault();
     let obj = {
-        name : name,
-        review : review
-    };
-    reviews.push(obj);
-    console.log("reviews", reviews);
-    // return reviews;
-    listReview(reviews);
+        nama : document.getElementById("name").value,
+        review : document.getElementById("review").value
+    }
+    reviews.push(obj)
+    console.log(reviews);
+    render(reviews);
 }
 
-function listReview(reviews){
-    let deleteIcon = document.createElement('span');
-    let editIcon = document.createElement('span');
-    let list = document.createElement('li');
+function clearArr(){
+    reviews = [];
+}
 
-    deleteIcon.innerHTML = 'delete';
-    deleteIcon.className = "delete-review";
-
-    editIcon.innerHTML = 'edit';
-    editIcon.className= 'edit-review';
-
-    list.appendChild(deleteIcon);
-    list.appendChild(editIcon);
-    for(let i = 0; i < reviews.length; i++){
-        list.innerHTML += reviews[i].name;
+function render(arr){
+    // const konten = document.getElementById('reviewsList');
+    for(let i = 0; i < arr.length; i++){
+        // console.log(arr[i]);
+        let data = arr[i];
+        let listElement = document.createElement('li');
+        listElement.classList.add('li-review');
+        listElement.innerText = data.nama + ' ' + data.review;
+        console.log(listElement);
+        document.getElementById('reviewsList').appendChild(listElement);
     }
-    let listReview = document.getElementById("theList");
-    listReview.appendChild(list);
 }
