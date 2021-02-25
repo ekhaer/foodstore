@@ -31,6 +31,19 @@ function render(arr){
         listElement.classList.add('li-review');
         listElement.innerText = data.nama + ' ' + data.review;
         console.log(listElement);
+        //adding edit button
+        let editIcon = document.createElement('span');
+        let deleteIcon = document.createElement('span');
+
+        editIcon.innerHTML = ' edit ';
+        deleteIcon.innerHTML = ' delete ';
+
+        editIcon.className = 'edit';
+        deleteIcon.className = 'delete';
+
+        listElement.appendChild(editIcon);
+        listElement.appendChild(deleteIcon);
+
         document.getElementById('reviewsList').appendChild(listElement);
     }
 }
