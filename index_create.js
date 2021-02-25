@@ -7,7 +7,7 @@ addButton.addEventListener('click', addReview);
 
 
 function addReview(event){
-    clearArr()
+    // clearArr()
     event.preventDefault();
     let obj = {
         nama : document.getElementById("name").value,
@@ -15,6 +15,10 @@ function addReview(event){
     }
     reviews.push(obj)
     console.log(reviews);
+    const tempList = document.getElementById("reviewsList");
+    while(tempList.hasChildNodes()){
+        tempList.removeChild(tempList.firstChild)
+    }
     render(reviews);
 }
 
@@ -30,10 +34,10 @@ function render(arr){
         let listElement = document.createElement('li');
         listElement.classList.add('li-review');
         listElement.innerText = data.nama + ' ' + data.review;
-        console.log(listElement);
+        // console.log(listElement);
         //adding edit button
-        let editIcon = document.createElement('span');
-        let deleteIcon = document.createElement('span');
+        let editIcon = document.createElement('button');
+        let deleteIcon = document.createElement('button');
 
         editIcon.innerHTML = ' edit ';
         deleteIcon.innerHTML = ' delete ';
@@ -46,4 +50,5 @@ function render(arr){
 
         document.getElementById('reviewsList').appendChild(listElement);
     }
+    // reviews = [];
 }
