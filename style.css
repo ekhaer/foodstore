@@ -143,11 +143,11 @@ form {
 .input-container {
     display: flex;
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-color: #f5f2ed;
-    padding: 100px 200px ;
+    /* padding: 100px 200px ; */
     border-radius: 10px;
     /* border-style: ;
     border-color: black; */
@@ -157,10 +157,21 @@ form {
     left: 0px;
     width: 200px;
     height: 100px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 20px;
+    padding-left: 120px;
+
+    width: 700px;
+    height: 300px;
+    /* padding-left: 100px; */
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
   }
   .input-box {
-    width: 350px;
+    width: 400px;
     height: 60px;
     background-color: white;
     border-radius: 10px;
@@ -201,6 +212,7 @@ form {
 
     .review-box {
         width: 60%;
+        height: 150px;
         background-color: white;
         margin-top: 20px;
         border-radius: 10px;
@@ -212,6 +224,13 @@ form {
         list-style: none;
         transition: all 0.5s ease;
       }
+      width: 700px;
+      height: 300px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+  
       
       .review {
         margin: 0.5rem;

@@ -49,6 +49,7 @@ function render(arr) {
     for (let i = 0; i < arr.length; i++) {
 
         let cardContainer = document.createElement('ul')
+        // cardContainer.setAttribute('overflow', 'scroll')
         cardContainer.classList.add('card')
 
 
