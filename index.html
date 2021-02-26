@@ -66,13 +66,11 @@
           </div>
         </div>
     </div>
-
     <!-- Contact Us -->
   <section class="contact" id="contact">
     <div class="heading">
       <h2>Contact Us</h2>
-    </div>
-    <div class="contact-container">
+      <br>
       <div class="contact-info">
         <h3>Contact Info</h3>
         <div class="contact-info-bx">
@@ -91,13 +89,16 @@
         </div>
       </div>
     </div>
+    <div class="contact-container">
+      
+    </div>
   </section>
     
     <!-- Review -->
   <section>
     <div class="input-container">
       <div>
-        <h3>Review</h3>
+        <h2>Review</h2>
       </div>
         <!-- Add icon library -->
         <!-- <link
@@ -113,19 +114,27 @@
       </div>
       <div class="input-box">
         <form>
-          <input type="text" class="form-input-name" placeholder="Name" />
-          <input type="text" class="form-input-text" placeholder="Your review here...">
-          <button class="form-button">Send</button>
+          <input type="text" id="form-input-name" placeholder="Name" />
+          <input type="text" id="form-input-text" placeholder="Your review here...">
+          <button id="form-button">Send</button>
         </form>
-        <div class="review-box">
-          <ul class="review-list"></ul>
-        </div>
+        <div id="spoiler" style="display: none;">
+          <br><span id="editTitle">Edit Review Disini</span><br>
+          <form id="saveEdit">
+              <input type="text" id="edit-name">
+              <input type="text" id="edit-text">
+              <input type="submit" id="edit-btn" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+          </form>
+      </div>
+      <div id="listReview" class="review-box" style="overflow: scroll;height: 125px;width: 400px;">
+          <!-- <ul id="review-list"></ul> -->
       </div>
       </div>
     </div>
     </div>
   </section>
 </section>
+<script src="index_edit.js"></script>
 </body>
 </html>
 

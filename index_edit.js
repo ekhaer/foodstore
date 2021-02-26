@@ -34,8 +34,8 @@ function addReview(event){
     // clearArr()
     event.preventDefault();
     let obj = {
-        name : document.getElementById("name").value,
-        review : document.getElementById("review").value
+        name : document.getElementById("form-input-name").value,
+        review : document.getElementById("form-input-text").value
     }
     reviews.push(obj)
     console.log(reviews);
@@ -49,6 +49,7 @@ function render(arr) {
     for (let i = 0; i < arr.length; i++) {
 
         let cardContainer = document.createElement('ul')
+        // cardContainer.setAttribute('overflow', 'scroll')
         cardContainer.classList.add('card')
 
 
