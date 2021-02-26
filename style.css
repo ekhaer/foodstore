@@ -1,124 +1,137 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
-    min-height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  min-height: 100vh;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #cac9c7;
+  background-color: #cac9c7;
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 .container {
-    position: absolute;
-    width: 8750%;
-    height: 170%;
-    background-color: #cac9c7;
-    width: 100%;
+  position: absolute;
+  width: 8750%;
+  height: 170%;
+  background-color: #cac9c7;
+  width: 100%;
 }
 .nav {
-    width: 100%;
-    height: 300px; 
+  width: 100%;
+  height: 300px;
 }
 
-img { 
-    width:100%; 
-    height:100%; 
-} 
+img {
+  width: 100%;
+  height: 100%;
+}
 
 .card {
-    box-sizing: border-box;
-    position: absolute;
-    width: 93%;
-    height: 36%;  
-    background-color: #f5f2ed;
-    margin-left: 3.5%;
-    margin-right: 1%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 93%;
+  height: 36%;
+  background-color: #f5f2ed;
+  margin-left: 3.5%;
+  margin-right: 1%;
 }
+/* .box {
+  text-align: center;
+  font-family: "Sentinel", "Lora", serif;
+  float: left;
+  width: 20%;
+  padding: 5px;
+  color: #3b6142;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+} */
+
 .box {
-    text-align: center;
-    font-family: 'Sentinel', 'Lora', serif;
-    float: left;
-    width: 20%;
-    padding: 5px;
-    color: #3b6142;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  color: #3b6142;
+  text-align: center;
+  font-family: "Sentinel", "Lora", serif;
+  background-color: white;
+  display: inline-block;
+  width: 275px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  padding: 10px;
 }
-img { 
-    width:100%; 
-    height:100%; 
-} 
-.content {
-    width: 100%;
-    height: 37.5%;
+.box img {
+  width: 200px;
 }
+/* .content {
+  width: 100%;
+  height: 37.5%;
+} */
 .kale {
-    color: #3b6142;
+  color: #3b6142;
 }
 h4 {
-    font-size: 2.1em;
-    letter-spacing: 1px;
-    font-family: 'Fjalla One', sans-serif;
-    margin-top: 6.25%;
-    margin-bottom: 6.25%;
-    font-weight: 500;
-    line-height: 1.1;
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: center;
+  font-size: 2.1em;
+  letter-spacing: 1px;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 6.25%;
+  margin-bottom: 6.25%;
+  font-weight: 500;
+  line-height: 1.1;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
 }
 /* kontak */
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: initial;
-    padding: 100px 430px;
-    background-color: #f5f2ed;
-    border-radius: 10px;
-    margin: 430px 10px 80px 0px;
-    position: absolute;
-    top: 400px;
-    left: 50px;
-    width: 200px;
-    height: 50px;
-    text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  padding: 100px 430px;
+  background-color: #f5f2ed;
+  border-radius: 10px;
+  margin: 430px 10px 80px 0px;
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  width: 200px;
+  height: 50px;
+  text-align: justify;
 }
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    top: 2000px;
-    left: 320px;
-    width: 300px;
-    height: 100px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  top: 2000px;
+  left: 320px;
+  width: 300px;
+  height: 100px;
+}
+
 /* review */
-header {
-    font-size: 1.2rem;
-    margin-bottom: -3rem;
-  }
-header,
+/* header {
+  font-size: 1.2rem;
+  margin-bottom: -3rem;
+} */
+/* header, */
 form {
   /* min-height: 20vh; */
   display: flex;
@@ -128,113 +141,110 @@ form {
   margin: 10px;
 }
 .input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f5f2ed;
-    padding: 100px 200px ;
-    border-radius: 10px;
-    /* border-style: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f2ed;
+  padding: 100px 200px;
+  border-radius: 10px;
+  /* border-style: ;
     border-color: black; */
-    margin: 600px;
-    position: absolute;
-    top: 230px;
-    left: 320px;
-    width: 200px;
-    height: 100px;
-    font-family: Arial, Helvetica, sans-serif
-  }
-  .input-box {
-    width: 350px;
-    height: 60px;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-    /* border-style: solid;
+  margin: 600px;
+  position: absolute;
+  top: 230px;
+  left: 320px;
+  width: 200px;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-box {
+  width: 350px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  /* border-style: solid;
     border-color: black; */
-  }
-  .form-input-text {
-    width:53%;
-    margin-right: 20px;
-  }
-  .form-input-name {
-    width:53%;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
-  form input,
-  form button {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    border: none;
-    background: whitesmoke;
-    border-radius: 0.4rem;
-   }
+}
+.form-input-text {
+  width: 53%;
+  margin-right: 20px;
+}
+.form-input-name {
+  width: 53%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: none;
+  background: whitesmoke;
+  border-radius: 0.4rem;
+}
 
-    form button {
-    color: white;
-    background: #32dca3;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 0.4rem;
-    margin-left: 0.4rem;
-    }
+form button {
+  color: white;
+  background: #32dca3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+}
 
-    button:focus {
-    border: none;
-    }
+button:focus {
+  border: none;
+}
 
-    .review-box {
-        width: 60%;
-        background-color: white;
-        margin-top: 20px;
-        border-radius: 10px;
-    }
-      
-      .review-list {
-        min-width: 40%;
-        list-style: none;
-        transition: all 0.5s ease;
-      }
-      
-      .review {
-        margin: 0.5rem;
-        background: white;
-        color: black;
-        font-size: 1.2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.6rem;
-        border-radius: 0.4rem;
-        /* transition: all 0.5s ease; */
-      }
-      .review-item {
-        padding: 0rem 0.5rem;
-      }
-      .review li {
-        flex: 1;
-      }
-      .edit-review {
-        background: #49cf7a;
-        color: white;
-      }
-      
-      .delete-review {
-        background: #dc3246;
-        color: white;
-        border: none;
-        padding: 0.6rem;
-        cursor: pointer;
-        border-radius: 0.4rem;
-        margin-left: 0.4rem;
-      }
-      
-      .remove {
-        transform: translateY(8rem) rotateZ(20deg);
-        opacity: 0;
-      }
+.review-box {
+  width: 60%;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
 
+.review-list {
+  min-width: 40%;
+  list-style: none;
+  transition: all 0.5s ease;
+}
 
- 
+.review {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  /* transition: all 0.5s ease; */
+}
+.review-item {
+  padding: 0rem 0.5rem;
+}
+.review li {
+  flex: 1;
+}
+.edit-review {
+  background: #49cf7a;
+  color: white;
+}
+
+.delete-review {
+  background: #dc3246;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.remove {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
