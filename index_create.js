@@ -40,11 +40,25 @@ function hapus(event) {
 function addReview(event){
     // clearArr()
     event.preventDefault();
-    let obj = {
-        nama : document.getElementById("name").value,
-        review : document.getElementById("review").value
+    let sudahAda = false
+    for (let i = 0; i < reviews.length; i++) {
+        if (document.getElementById("name").value === reviews[i].nama) {
+            sudahAda = true
+        }
     }
-    reviews.push(obj)
+    if (sudahAda === true) {
+        alert("Nama sudah ada!")
+    } else {
+        if (document.getElementById("name").value.length !== 0 && document.getElementById("review").value !== 0) {
+            let obj = {
+                nama : document.getElementById("name").value,
+                review : document.getElementById("review").value
+            }
+            reviews.push(obj)
+        } else {
+            alert("Tidak ada nama atau review yang dimasukan!")
+        }
+    }
     // console.log(reviews);
     clearArr();
     render(reviews);
