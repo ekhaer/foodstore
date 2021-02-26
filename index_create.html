@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div id="add-button">
+
+        </div>
+        <div id="content">
+
+        </div>
+        <div id="addReview">
+            <form>
+                <input type="text" id="name" class="form-input-name" placeholder="your name"/>
+                <input type="text" id="review" class="form-input-review" >
+                <button class="save-button" id="form-button">Add Review</button>
+            </form>
+        </div>
+
+        <div id="spoiler" style="display: none;">
+            <form id="saveEdit">
+                <h4>Edit Review Disini</h4>
+                <input type="text" id="edit-name">
+                <input type="text" id="edit-text">
+                <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+        <div id="listReview" class="review-box" style="overflow: scroll;">
+            <!-- <ul id="review-list"></ul> -->
+        </div>
+
+    </body>
+    <footer>
+        <script src="index_edit.js"></script>
+    </footer>
+</html>
