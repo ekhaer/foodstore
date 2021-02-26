@@ -14,19 +14,21 @@ function hapus(event) {
     const comment = item.parentElement;
     let find = comment.querySelector('.li-review')
     let data = find.innerHTML
-    console.log(find)
+    // console.log(find)
     let newReviews = []
     let temp = ''
     for (let i = 0; i < data.length; i++) {
         temp += data[i]
         // console.log(data[i])
-        if (data[i] === ':') {
+        if (data[i + 1] === ':') {
           break;
         }
+        console.log(temp)
       }
-    for (let i = 0; i < reviews.length; i++) {
-        if (temp !== reviews[i].nama) {
-            newReviews.push(reviews[i])
+    for (let j = 0; j < reviews.length; j++) {
+        // console.log(temp, reviews[j].nama, 'masuk')
+        if (temp !== reviews[j].nama) {
+            newReviews.push(reviews[j])
         }
     }
     reviews = newReviews
@@ -43,7 +45,7 @@ function addReview(event){
         review : document.getElementById("review").value
     }
     reviews.push(obj)
-    console.log(reviews);
+    // console.log(reviews);
     clearArr();
     render(reviews);
 }
