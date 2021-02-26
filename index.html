@@ -98,7 +98,7 @@
   <section>
     <div class="input-container">
       <div>
-        <h3>Review</h3>
+        <h2>Review</h2>
       </div>
         <!-- Add icon library -->
         <!-- <link
@@ -119,11 +119,11 @@
           <button id="form-button">Send</button>
         </form>
         <div id="spoiler" style="display: none;">
+          <br><span id="editTitle">Edit Review Disini</span><br>
           <form id="saveEdit">
-              <h4>Edit Review Disini</h4>
               <input type="text" id="edit-name">
               <input type="text" id="edit-text">
-              <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+              <input type="submit" id="edit-btn" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
           </form>
       </div>
       <div id="listReview" class="review-box" style="overflow: scroll;height: 125px;width: 400px;">
