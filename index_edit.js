@@ -34,8 +34,8 @@ function addReview(event){
     // clearArr()
     event.preventDefault();
     let obj = {
-        name : document.getElementById("name").value,
-        review : document.getElementById("review").value
+        name : document.getElementById("form-input-name").value,
+        review : document.getElementById("form-input-text").value
     }
     reviews.push(obj)
     console.log(reviews);
